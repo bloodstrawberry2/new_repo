@@ -43,48 +43,20 @@ int main()
   return 0;
 }
 ```
+---
+*기울임*   
+**굵게**   
+~~취소선~~   
+---
+
+피로물든딸기의 라이브러리 [링크](https://bloodstrawberry.tistory.com/)
 
 ---
 
 
-*기울임*   
-**굵게**   
-~~취소선~~   
 
 
 이미지 복사
-
-
-[처음으로 이동](#제목)
-
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-
-#제목
-
-
-
-[Stack](#stack-program)
-
-
-
-
-
-
-
-
-
-~생략~
-
-
-
-
-
-
-
-
-#Stack Program
-
-
 
 
 
