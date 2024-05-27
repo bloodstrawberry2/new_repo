@@ -29,7 +29,7 @@ jobs:
       # sendEmail.js 실행
       - name: Send email
         run: |
-          node ./actions/sendEmail.js
+          node ./post_office/send_email.js
           
       # Secret에 설정한 변수를 환경 변수로 설정
         env:
