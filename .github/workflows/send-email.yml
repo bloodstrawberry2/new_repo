@@ -2,8 +2,8 @@ name: Send Email
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - 'App.js'
 
 jobs:
   send_email:
