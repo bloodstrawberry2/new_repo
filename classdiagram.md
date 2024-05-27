@@ -4,7 +4,7 @@
       +showName()*
       +math()
       +search()
-    }
+    }ZZZZ
     class A { 
       +showName()
       +sort()
