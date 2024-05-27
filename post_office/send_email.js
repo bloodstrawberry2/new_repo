@@ -4,6 +4,7 @@ const emailID = "process.env.EMAIL_ID";
 const password = "process.env.PASSWORD";
 
 const sendEmail = async () => {
+  console.log(emailID);
   // 네이버
   const transporter = nodemailer.createTransport({
     service: "naver",
