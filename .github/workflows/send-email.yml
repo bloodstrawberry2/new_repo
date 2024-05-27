@@ -17,11 +17,6 @@ jobs:
         with:
           node-version: '16'
 
-      # 파일을 읽어 메일을 받는 사람(RECEIVER_EMAIL)를 환경변수로 설정 
-      - name: Read mail receiver
-        id: read-file
-        run: echo "RECEIVER_EMAIL=$(cat actions/mail_receiver.txt)" >> $GITHUB_ENV
-
       # nodemailer 설치
       - name: Install dependencies
         run: npm install nodemailer
