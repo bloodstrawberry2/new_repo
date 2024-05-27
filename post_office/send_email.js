@@ -1,7 +1,7 @@
 const nodemailer = require("nodemailer");
 
 const emailID = "process.env.EMAIL_ID";
-const password = "process.env.PASSWORLD";
+const password = "process.env.PASSWORD";
 
 const sendEmail = async () => {
   // 네이버
