@@ -1,0 +1,16 @@
+name: Every 30 Minutes schedule
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' 
+
+jobs:
+  thirty_minutes_schedule_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Display current time
+        run: |
+          echo "Current Time"
+          echo "UTC   : $(date +"%Y-%m-%dT%H:%M:%SZ")"
+          echo "SEOUL : $(TZ=Asia/Seoul date +"%Y-%m-%dT%H:%M:%SZ")"
