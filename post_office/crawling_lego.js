@@ -5,6 +5,8 @@ const nodemailer = require("nodemailer");
 const emailID = process.env.EMAIL_ID;
 const password = process.env.PASSWORD;
 
+const url = "https://www.lego.com/ko-kr/categories/price-under-20000-krw?page=2&sort.key=PRICE&sort.direction=DESC&offset=0";
+
 const sendEmail = async (text) => {
   // 네이버
   const transporter = nodemailer.createTransport({
