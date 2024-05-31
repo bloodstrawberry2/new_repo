@@ -1,9 +1,9 @@
-name: Send Email
+name: Send Email For Lego
 
 on:
   push:
-    paths:
-      - 'App.js'
+    branches:
+      - main
 
 jobs:
   send_email:
@@ -20,6 +20,11 @@ jobs:
       # nodemailer 설치
       - name: Install dependencies
         run: npm install nodemailer
+
+      # 파일을 읽어 메일을 받는 사람(RECEIVER_EMAIL)를 환경변수로 설정 
+      - name: Read mail receiver
+        id: read-file
+        run: echo "RECEIVER_EMAIL=$(cat post_office/address.txt)" >> $GITHUB_ENV
 
       # sendEmail.js 실행
       - name: Send email
