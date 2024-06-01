@@ -1,0 +1,33 @@
+name: Update Lotto File
+
+on:
+  push:
+    branches:
+      - main
+  #schedule:
+  #  - cron: '30 12 * * 6'
+
+jobs:
+  update-lotto:
+    runs-on: ubuntu-latest
+
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set Up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install Dependencies
+      run: |
+        npm install axios
+        npm install @octokit/rest
+        npm install node-fetch@2
+
+    - name: Run Node.js Script
+      run: node lotto/weekly_lotto.js
