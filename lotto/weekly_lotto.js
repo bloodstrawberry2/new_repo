@@ -7,6 +7,7 @@ const { Octokit } = require("@octokit/core");
 const userName = "bloodstrawberry2";
 const userEmail = "bloodstrawberry.library@gmail.com";
 const repo = "new_repo";
+const token = process.env.GH_TOKEN;
 
 const getLottoNumber = async (drwNo) => {
   const response = await axios.get(
