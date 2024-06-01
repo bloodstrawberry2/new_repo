@@ -70,7 +70,7 @@ const updateLottoJson = async () => {
 
   const updatedJson = JSON.stringify(lottoJson, null, 2);
   
-  let response = await githubWrite(filePath, updatedJson);    
+  let response = await githubWrite(filePath, updatedJson, "Update Lotto!!");    
   
   console.log(response);
 };
