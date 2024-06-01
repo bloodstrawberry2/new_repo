@@ -63,7 +63,6 @@ const updateLottoJson = async () => {
   const data = fs.readFileSync(filePath, "utf-8");
   const lottoJson = JSON.parse(data);
   const lastNumber = lottoJson[lottoJson.length - 1].drwNo;
-
   const latest = await getLottoNumber(lastNumber + 1);
  
   lottoJson.push(latest);
